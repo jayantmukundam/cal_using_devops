@@ -1,1 +1,1 @@
-172.16.128.35 ansible_ssh_user=jayant ansible_ssh_pass=jayant@2811
+172.16.128.35 ansible_user=jayant
