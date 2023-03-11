@@ -1,9 +1,16 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     static double findSqrt(double num){
-        return Math.sqrt(num);
+        logger.info("SQUARE ROOT OF "+ num);
+        double ans = Math.sqrt(num);
+        logger.info("RESULT "+ ans);
+        return ans;
     }
 
     public static void main(String[] args) {
