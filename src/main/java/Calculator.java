@@ -17,8 +17,9 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
 
         int choice = 0;
+        System.out.println("Press enter to start");
+        sc.nextLine();
         System.out.println("###### WELCOME #######\n");
-
 
         while(choice!=5){
             System.out.println("Enter the operation\n");
