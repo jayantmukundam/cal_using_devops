@@ -15,5 +15,4 @@
         name: calculator-using-devops
         image: jayantmukundam/calc_with_devops
         state: started
-        tty: yes
         interactive: yes
