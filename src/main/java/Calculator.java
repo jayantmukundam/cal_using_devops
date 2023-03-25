@@ -33,6 +33,7 @@ public class Calculator {
     static double findPower(double base, double exponent) {
         logger.info("BASE "+base + " | EXPONENT "+exponent);
         double ans = Math.pow(base,exponent);
+
         logger.info("RESULT "+ans);
         return ans;
     }
@@ -55,7 +56,12 @@ public class Calculator {
                     // square root
                     System.out.println("Enter the number whose square root you want:");
                     double input = sc.nextDouble();
+                    if(input<0){
+                        System.out.println("Square root is not applicable to the given input\n");
+                        break;
+                    }
                     double ans = findSqrt(input);
+
 
                     System.out.println("The square root of "+input+" is "+ans+".\n");
                 }
@@ -64,7 +70,7 @@ public class Calculator {
                     //factorial
                     System.out.println("Enter a non-negative integer whose factorial you want:");
                     int input = sc.nextInt();
-                    if(input<0){
+                    if(input<0 || input>20){
                         System.out.println("Factorial is not applicable to the given input\n");
                         break;
                     }
